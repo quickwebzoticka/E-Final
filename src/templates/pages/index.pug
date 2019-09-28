@@ -1,0 +1,20 @@
+extends ../template
+
+block variables
+	- var title = 'Авторизация'
+
+block content
+	.auth-wrap
+		form.auth(action="#")
+			.auth__title Закажите еду в пути
+			label(for="passport") Паспортные данные
+			input(type="text" name="passport" id="passport" placeholder="1234 567890") 
+			label(for="FIO") ФИО
+			input(type="text" name="FIO" id="FIO" placeholder="Иванов Иван Иванович") 
+			.auth-row
+				label.auth-check(for="remember")
+					input(type="checkbox" name="remember" id="remember")
+					span
+					span.auth-check__label Запомнить меня
+				.auth__forget Забыли пароль?
+			button.auth__btn(type="submit") Войти

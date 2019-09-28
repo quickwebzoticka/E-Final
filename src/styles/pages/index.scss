@@ -1,0 +1,115 @@
+.auth{
+	&-wrap{
+		width: 100%;
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 148px 0;
+	}
+	&__title{
+		font-weight: 500;
+		font-size: 40px;
+		color: #091133;
+		margin-bottom: 60px;
+		text-align: center;
+	}
+	> label{
+		display: block;
+		font-weight: 500;
+		font-size: 16px;
+		color: #8492A6;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	> input{
+		width: 476px;
+		height: 56px;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: 9px;
+		padding-left: 20px;
+		font-weight: 500;
+		font-size: 14px;
+		margin-bottom: 25px;
+		transition: .3s;
+		&::placeholder{
+			color: #D3DCE6;
+		}
+		@media screen and (min-width: 1200px){
+			&:hover{
+				box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.05);
+			}
+			&:focus{
+				box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+			}
+		}
+	}
+	&-row{
+		display: flex;
+		justify-content: space-between;
+	}
+	&-check{
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+		input{
+			display: none;
+		}
+		input:checked + span:before{
+			content: '';
+			display: block;
+			width: 10px;
+			height: 10px;
+			background: #E21A1A;
+			border-radius: 2px;
+		}
+		span:first-of-type{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 18px;
+			height: 18px;
+			border: 1px solid rgba(0, 0, 0, 0.15);
+			border-radius: 4px;
+			margin-right: 2px;
+			position: relative;
+		}
+		&__label{
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 17px;
+			color: #8492A6;
+		}
+	}
+	&__forget{
+		color: rgba(226, 26, 26, 0.6);
+		font-weight: 600;
+		font-size: 12px;
+	}
+	&__btn{
+		margin-top: 45px;
+		width: 100%;
+		height: 52px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #E21A1A;
+		border-radius: 8px;
+		color: #FFFFFF;
+		font-weight: 500;
+		font-size: 18px;
+		border: none;
+		cursor: pointer;
+		transition: .3s;
+		@media screen and (min-width: 1200px){
+			&:hover{
+				box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+				transition: .3s;
+			}
+			&:active{
+				box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+				transition: .3s;
+			}
+		}
+	}
+}
