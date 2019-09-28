@@ -8,9 +8,9 @@ block content
 		form.auth(action="#")
 			.auth__title Закажите еду в пути
 			label(for="passport") Паспортные данные
-			input(type="text" name="passport" id="passport" placeholder="1234 567890") 
+			input(type="text" name="passport" id="passport" placeholder="1234 567890" data-required)  
 			label(for="FIO") ФИО
-			input(type="text" name="FIO" id="FIO" placeholder="Иванов Иван Иванович") 
+			input(type="text" name="FIO" id="FIO" placeholder="Иванов Иван Иванович" data-required) 
 			.auth-row
 				label.auth-check(for="remember")
 					input(type="checkbox" name="remember" id="remember")

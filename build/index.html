@@ -22,9 +22,9 @@
           <form class="auth" action="#">
             <div class="auth__title">Закажите еду в пути</div>
             <label for="passport">Паспортные данные</label>
-            <input type="text" name="passport" id="passport" placeholder="1234 567890">
+            <input type="text" name="passport" id="passport" placeholder="1234 567890" data-required>
             <label for="FIO">ФИО</label>
-            <input type="text" name="FIO" id="FIO" placeholder="Иванов Иван Иванович">
+            <input type="text" name="FIO" id="FIO" placeholder="Иванов Иван Иванович" data-required>
             <div class="auth-row">
               <label class="auth-check" for="remember">
                 <input type="checkbox" name="remember" id="remember"><span></span><span class="auth-check__label">Запомнить меня</span>
@@ -59,6 +59,7 @@
     <script src="assets/scripts/jquery-min.js"></script>
     <script src="assets/scripts/jquery.inputmask.bundle.js"></script>
     <script src="assets/scripts/fancybox/jquery.fancybox.min.js"></script>
+    <script src="assets/scripts/validation.js"></script>
     <script src="assets/scripts/main.js"></script>
   </body>
 </html>
