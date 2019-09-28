@@ -1,0 +1,28 @@
+.restaurants{
+	&-filter{
+		display: flex;
+		justify-content: space-between;
+		margin-top: 23px;
+		&-tags{
+			display: flex;
+			margin-left: -17px;
+			input{
+				display: none;
+			}
+			span{
+				font-weight: 500;
+				font-size: 16px;
+				color: rgba(0, 0, 0, 0.7);
+				padding: 7px 12px;
+				margin: 0 5px;
+				border: 1px solid transparent;
+				cursor: pointer;
+			}
+			input:checked + span{
+				color: #000000;
+				border: 1px solid #E21A1A;
+				border-radius: 10px;
+			}
+		}
+	}
+}

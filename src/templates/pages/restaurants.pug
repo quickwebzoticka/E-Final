@@ -5,7 +5,39 @@ block variables
 
 block content
 	.container
-		.pickup
+		.restaurants
 			h1.title Выберите ресторан
 				span Поезд №479е
 					span 13:56 
+			form.restaurants-filter(action="#")
+				.restaurants-filter-tags
+					label.restaurants-filter-tags-item(for="checkbox1")
+						input(type="checkbox" id="checkbox1")
+						span Пицца
+					label.restaurants-filter-tags-item(for="checkbox2")
+						input(type="checkbox" id="checkbox2")
+						span Напитки
+					label.restaurants-filter-tags-item(for="checkbox3")
+						input(type="checkbox" id="checkbox3")
+						span Сладости
+					label.restaurants-filter-tags-item(for="checkbox4")
+						input(type="checkbox" id="checkbox4")
+						span Супы
+					label.restaurants-filter-tags-item(for="checkbox5")
+						input(type="checkbox" id="checkbox5")
+						span Бургеры
+					label.restaurants-filter-tags-item(for="checkbox6")
+						input(type="checkbox" id="checkbox6")
+						span Суши
+					label.restaurants-filter-tags-item(for="checkbox7")
+						input(type="checkbox" id="checkbox7")
+						span Шаверма
+				.restaurants-filter-sort
+					.sort Сортировать по:
+						span 
+							span Популярности
+							img(src="assets/images/sort-icon.svg", alt="")
+						.sort-block
+							.sort-block__item.active Популярности
+							.sort-block__item Отзывам
+							.sort-block__item Цене

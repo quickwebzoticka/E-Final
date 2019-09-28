@@ -55,6 +55,17 @@ h1{
 	justify-content: space-between; 
 	padding-bottom: 25px; 
 	border-bottom: 1px solid #E5E5E5;
+	align-items: flex-end;
+	> span{
+		color: rgba(0, 0, 0, 0.5);
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 32px;
+		span{
+			margin-left: 10px;
+			color: #E21A1A;
+		}
+	}
 }
 .sort{
 	display: flex;

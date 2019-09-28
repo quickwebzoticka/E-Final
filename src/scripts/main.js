@@ -25,6 +25,8 @@ $(document).on('click', '.sort', function () {
 });
 $(document).on('click', '.sort-block__item', function () {
 	$(document).find('.sort span span').text($(this).text());
+	$('.sort-block__item').removeClass('active');
+	$(this).addClass('active');
 });
 $(document).on('click', function (e) { // событие клика по веб-документу
 	var div = $('.sort-block'); // тут указываем сласс элемента
