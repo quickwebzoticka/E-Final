@@ -5,7 +5,26 @@ block variables
 
 block content
 	.container
-		.pickup
+		.restarauntpage
 			h1.title Бургер Family
+				span.title-tags
+					span • Шаурма
+					span • Стритфуд
+					span • Бургеры
+					span • Доставка от 500 ₽ 
 				span Поезд №479е
 					span 13:56 
+			.restaurants-items.restarauntpage-items
+				- for (var i=5; i>0; i--)
+					a.restaurants-items-card(href="dish.html")
+						.restaurants-items-card__img
+							img(src="assets/images/restaraunt-image" + i + ".jpg", alt="")
+						.restaurants-items-card-info
+							.restaurants-items-card-info-top
+								.restaurants-items-card-info-top__title Фирменный Бургер
+								.restaurants-items-card-info-top__weight 465 г
+								.restaurants-items-card-info-top__price 500 ₽
+							.restaurants-items-card-info-main
+								.restaurants-items-card-info-main__info Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+								.restaurants-items-card-info-main__add 
+							

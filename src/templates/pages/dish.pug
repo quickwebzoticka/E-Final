@@ -5,7 +5,16 @@ block variables
 
 block content
 	.container
-		.pickup
+		.dish
 			h1.title Бургер Family
 				span Поезд №479е
 					span 13:56 
+			.dish-main
+				.dish-main-left
+					img(src="assets/images/dish-img.jpg", alt="")
+				.dish-main-right
+					.dish-main-right__title Фирменный Бургер
+					.dish-main-right__weight 420 грамм
+					.dish-main-right-btns
+						a.dish-main-right-btns__addCart(href="#") Добавить в корзину
+						a.dish-main-right-btns__toCart(href="#") Перейти в корзину
