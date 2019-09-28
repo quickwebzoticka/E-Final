@@ -35,8 +35,8 @@
       </header>
       <div class="content">
         <div class="auth-wrap">
-          <form class="auth" action="#">
-            <h1 class="auth__title">Закажите еду в пути</h1>
+          <h1 class="auth__title"> <span class="active" data-id="bilet">Заказ по билету</span><span data-id="auth">Авторизация</span></h1>
+          <form class="auth" action="#" data-id="auth">
             <label for="passport">Паспортные данные</label>
             <input type="text" name="passport" id="passport" placeholder="1234 567890" data-required>
             <label for="FIO">ФИО</label>
@@ -46,6 +46,11 @@
                 <input type="checkbox" name="remember" id="remember"><span></span><span class="auth-check__label">Запомнить меня</span>
               </label><a class="auth__forget" href="#">Забыли пароль?</a>
             </div>
+            <button class="auth__btn" type="submit">Войти</button>
+          </form>
+          <form class="auth" action="#" data-id="bilet">
+            <label for="bilet">Номер билета</label>
+            <input type="text" name="bilet" id="bilet" placeholder="76896932388886" data-required>
             <button class="auth__btn" type="submit">Войти</button>
           </form>
         </div>

@@ -5,8 +5,10 @@ block variables
 
 block content
 	.auth-wrap
-		form.auth(action="#")
-			h1.auth__title Закажите еду в пути
+		h1.auth__title 
+			span.active(data-id="bilet") Заказ по билету
+			span(data-id="auth") Авторизация
+		form.auth(action="#" data-id="auth")
 			label(for="passport") Паспортные данные
 			input(type="text" name="passport" id="passport" placeholder="1234 567890" data-required)  
 			label(for="FIO") ФИО
@@ -17,4 +19,8 @@ block content
 					span
 					span.auth-check__label Запомнить меня
 				a.auth__forget(href="#") Забыли пароль?
+			button.auth__btn(type="submit") Войти
+		form.auth(action="#" data-id="bilet")
+			label(for="bilet") Номер билета
+			input(type="text" name="bilet" id="bilet" placeholder="76896932388886" data-required)  
 			button.auth__btn(type="submit") Войти
