@@ -6,4 +6,39 @@ block variables
 block content
 	.container
 		.pickup
-			h1.pickup__title Выберите пункт получения
+			h1.title Выберите пункт получения
+			.pickup-sort
+				.sort Сортировать по:
+					span 
+						span Длительности остановки
+						img(src="assets/images/sort-icon.svg", alt="")
+					.sort-block
+						.sort-block__item.active Длительности остановки
+						.sort-block__item Времени отправления
+						.sort-block__item Времи прибытия
+			.trains-items.pickup-items
+				- for (var i=0; i<5; i++)
+					a.trains-items-card(href="restaurants.html")
+						.trains-items-card-row
+							.trains-items-card-row-col
+								span.trains-items-card__time 17:40
+								span.trains-items-card__location Бежецк
+							.trains-items-card-row-col 
+								img(src="assets/images/pickup.svg", alt="")
+						.trains-items-card-row
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время отправления
+								.trains-items-card-row-col__text
+									span 13:56
+									span 24.09.19
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время прибытия
+								.trains-items-card-row-col__text
+									span 14:16
+									span 25.09.19
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время остановки
+								.trains-items-card-row-col__text
+									span 12 м.
+						.trains-items-card-row
+							.trains-items-card__submit Выбрать пункт

@@ -146,11 +146,23 @@
   }
 }
 
+@include w1366{
+  .header{
+    padding: 0 20px;
+  }
+}
+
 .breadcrumbs{
   position: absolute;
   bottom: -40px;
   display: flex;
   align-items: center;
+  max-width: 1350px;
+  padding: 0 20px; 
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: 3px;
   &__item{
     color: rgba(0, 0, 0, 0.5);
     font-weight: 300;
