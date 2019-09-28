@@ -1,6 +1,6 @@
 header.header
 	a.header__logo(href="/")
-		img(src="assets/images/logo.png ", alt="")
+		img(src="assets/images/logo.png", alt="")
 	.header-menu
 		a.header-menu__item.active(href="#") Ресторанам
 		a.header-menu__item(href="#") Компаниям
@@ -9,3 +9,44 @@ header.header
 	.header-btns
 		a.header-btns__enter(href="#") Войти
 		a.header-btns__register(href="#") Регистрация
+
+	.breadcrumbs
+		a.breadcrumbs__item(href="#") Главная
+		img(src="assets/images/bread-arr.svg", alt="")
+		a.breadcrumbs__item(href="#") Личный кабинет
+		img(src="assets/images/bread-arr.svg", alt="")
+		a.breadcrumbs__item(href="#") Заказ еды
+		img(src="assets/images/bread-arr.svg", alt="")
+		.breadcrumbs__item Выбор поезда
+
+header.header.auth
+	a.header__logo(href="/")
+		img(src="assets/images/logo.png", alt="")
+	form.header-search(action="#")
+		label(for="search")
+			img(src="assets/images/header-search-icon.svg", alt="")
+			input(type="text" name="search" id="search" placeholder="Найти еду в ресторанах")
+	.header-info
+		a.header-info-item(href="#")
+			img(src="assets/images/header-basket-icon.svg", alt="")
+			span.header-info-item__spanbasket 2
+		a.header-info-item(href="#")
+			img(src="assets/images/header-notice-icon.svg", alt="")
+			span.header-info-item__spannotice 20
+		a.header-info-item(href="#")
+			.header-info-item__photo
+				img(src="assets/images/header-profile-icon.jpg ", alt="")
+			.header-info-item__name Martur Artynov
+		a.header-info-item(href="#")
+			img(src="assets/images/header-exit-icon.svg", alt="")
+			span.header-info-item__text Выйти
+
+	
+	.breadcrumbs
+		a.breadcrumbs__item(href="#") Главная
+		img(src="assets/images/bread-arr.svg", alt="")
+		a.breadcrumbs__item(href="#") Личный кабинет
+		img(src="assets/images/bread-arr.svg", alt="")
+		a.breadcrumbs__item(href="#") Заказ еды
+		img(src="assets/images/bread-arr.svg", alt="")
+		.breadcrumbs__item Выбор поезда

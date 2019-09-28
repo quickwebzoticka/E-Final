@@ -1,7 +1,27 @@
 extends ../template
 
 block variables
-	- var title = 'Карта'
+	- var title = 'Выбор поезда'
 
 block content
-	.trains
+	.container
+		.trains
+			h1.trains__title Выберите поезд
+			.trains-items
+				- for (var i=0; i<5; i++)
+					.trains-items-card
+						.trains-items-card-row
+							.trains-items-card-direction
+								img(src="assets/images/trains-direction-arr.svg", alt="")
+								.trains-items-card-direction-items
+									span Санкт-Петербург
+									span Казань
+							.trains-items-card-train
+								.trains-items-card-train__num 479е
+									img(src="assets/images/trains-icon.svg", alt="")
+								.trains-items-card-train__type Вид:
+									span Купе
+						.trains-items-card-row
+						.trains-items-card-row
+							a.trains-items-card__submit(href="#") Выбрать поезд
+					

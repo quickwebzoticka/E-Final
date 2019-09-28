@@ -1,3 +1,5 @@
+@import 'common/normalize';
+
 *:focus{
 	outline: none;
 }
@@ -27,9 +29,10 @@ img{
 	display: block;
 }
 .container{
-	max-width: 1380px;
-	width: 97%;
+	max-width: 1310px;
+	width: 100%;
 	margin: 0 auto;
+	margin-top: 60px;
 }
 .wrapper {
 	overflow-x: hidden;
@@ -42,12 +45,16 @@ img{
 	display: flex;
 	flex-direction: column
 }
+h1{
+	font-weight: 600;
+	font-size: 48px;
+}
 
 @import 'common/adaptive';
-@import 'common/normalize';
 @import 'common/fonts';
 @import 'common/header';
 @import 'common/footer';
 @import 'common/popup';
 @import 'pages/main'; 
 @import 'pages/index';
+@import 'pages/trains';

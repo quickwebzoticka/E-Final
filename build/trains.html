@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Карта</title>
+    <title>Выбор поезда</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,12 +13,99 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header"><a class="header__logo" href="/"><img src="assets/images/logo.png " alt=""></a>
+      <header class="header"><a class="header__logo" href="/"><img src="assets/images/logo.png" alt=""></a>
         <div class="header-menu"><a class="header-menu__item active" href="#">Ресторанам</a><a class="header-menu__item" href="#">Компаниям</a><a class="header-menu__item" href="#">Курьерам</a><a class="header-menu__item" href="#">Как это работает?</a></div>
         <div class="header-btns"><a class="header-btns__enter" href="#">Войти</a><a class="header-btns__register" href="#">Регистрация</a></div>
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Главная</a><img src="assets/images/bread-arr.svg" alt=""><a class="breadcrumbs__item" href="#">Личный кабинет</a><img src="assets/images/bread-arr.svg" alt=""><a class="breadcrumbs__item" href="#">Заказ еды</a><img src="assets/images/bread-arr.svg" alt="">
+          <div class="breadcrumbs__item">Выбор поезда</div>
+        </div>
+      </header>
+      <header class="header auth"><a class="header__logo" href="/"><img src="assets/images/logo.png" alt=""></a>
+        <form class="header-search" action="#">
+          <label for="search"><img src="assets/images/header-search-icon.svg" alt="">
+            <input type="text" name="search" id="search" placeholder="Найти еду в ресторанах">
+          </label>
+        </form>
+        <div class="header-info"><a class="header-info-item" href="#"><img src="assets/images/header-basket-icon.svg" alt=""><span class="header-info-item__spanbasket">2</span></a><a class="header-info-item" href="#"><img src="assets/images/header-notice-icon.svg" alt=""><span class="header-info-item__spannotice">20</span></a><a class="header-info-item" href="#">
+            <div class="header-info-item__photo"><img src="assets/images/header-profile-icon.jpg " alt=""></div>
+            <div class="header-info-item__name">Martur Artynov</div></a><a class="header-info-item" href="#"><img src="assets/images/header-exit-icon.svg" alt=""><span class="header-info-item__text">Выйти</span></a></div>
+        <div class="breadcrumbs"><a class="breadcrumbs__item" href="#">Главная</a><img src="assets/images/bread-arr.svg" alt=""><a class="breadcrumbs__item" href="#">Личный кабинет</a><img src="assets/images/bread-arr.svg" alt=""><a class="breadcrumbs__item" href="#">Заказ еды</a><img src="assets/images/bread-arr.svg" alt="">
+          <div class="breadcrumbs__item">Выбор поезда</div>
+        </div>
       </header>
       <div class="content">
-        <div class="trains"></div>
+        <div class="container">
+          <div class="trains">
+            <h1 class="trains__title">Выберите поезд</h1>
+            <div class="trains-items">
+              <div class="trains-items-card">
+                <div class="trains-items-card-row">
+                  <div class="trains-items-card-direction"><img src="assets/images/trains-direction-arr.svg" alt="">
+                    <div class="trains-items-card-direction-items"><span>Санкт-Петербург</span><span>Казань</span></div>
+                  </div>
+                  <div class="trains-items-card-train">
+                    <div class="trains-items-card-train__num">479е<img src="assets/images/trains-icon.svg" alt=""></div>
+                    <div class="trains-items-card-train__type">Вид:<span>Купе</span></div>
+                  </div>
+                </div>
+                <div class="trains-items-card-row"></div>
+                <div class="trains-items-card-row"><a class="trains-items-card__submit" href="#">Выбрать поезд</a></div>
+              </div>
+              <div class="trains-items-card">
+                <div class="trains-items-card-row">
+                  <div class="trains-items-card-direction"><img src="assets/images/trains-direction-arr.svg" alt="">
+                    <div class="trains-items-card-direction-items"><span>Санкт-Петербург</span><span>Казань</span></div>
+                  </div>
+                  <div class="trains-items-card-train">
+                    <div class="trains-items-card-train__num">479е<img src="assets/images/trains-icon.svg" alt=""></div>
+                    <div class="trains-items-card-train__type">Вид:<span>Купе</span></div>
+                  </div>
+                </div>
+                <div class="trains-items-card-row"></div>
+                <div class="trains-items-card-row"><a class="trains-items-card__submit" href="#">Выбрать поезд</a></div>
+              </div>
+              <div class="trains-items-card">
+                <div class="trains-items-card-row">
+                  <div class="trains-items-card-direction"><img src="assets/images/trains-direction-arr.svg" alt="">
+                    <div class="trains-items-card-direction-items"><span>Санкт-Петербург</span><span>Казань</span></div>
+                  </div>
+                  <div class="trains-items-card-train">
+                    <div class="trains-items-card-train__num">479е<img src="assets/images/trains-icon.svg" alt=""></div>
+                    <div class="trains-items-card-train__type">Вид:<span>Купе</span></div>
+                  </div>
+                </div>
+                <div class="trains-items-card-row"></div>
+                <div class="trains-items-card-row"><a class="trains-items-card__submit" href="#">Выбрать поезд</a></div>
+              </div>
+              <div class="trains-items-card">
+                <div class="trains-items-card-row">
+                  <div class="trains-items-card-direction"><img src="assets/images/trains-direction-arr.svg" alt="">
+                    <div class="trains-items-card-direction-items"><span>Санкт-Петербург</span><span>Казань</span></div>
+                  </div>
+                  <div class="trains-items-card-train">
+                    <div class="trains-items-card-train__num">479е<img src="assets/images/trains-icon.svg" alt=""></div>
+                    <div class="trains-items-card-train__type">Вид:<span>Купе</span></div>
+                  </div>
+                </div>
+                <div class="trains-items-card-row"></div>
+                <div class="trains-items-card-row"><a class="trains-items-card__submit" href="#">Выбрать поезд</a></div>
+              </div>
+              <div class="trains-items-card">
+                <div class="trains-items-card-row">
+                  <div class="trains-items-card-direction"><img src="assets/images/trains-direction-arr.svg" alt="">
+                    <div class="trains-items-card-direction-items"><span>Санкт-Петербург</span><span>Казань</span></div>
+                  </div>
+                  <div class="trains-items-card-train">
+                    <div class="trains-items-card-train__num">479е<img src="assets/images/trains-icon.svg" alt=""></div>
+                    <div class="trains-items-card-train__type">Вид:<span>Купе</span></div>
+                  </div>
+                </div>
+                <div class="trains-items-card-row"></div>
+                <div class="trains-items-card-row"><a class="trains-items-card__submit" href="#">Выбрать поезд</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <footer class="footer">
         <div class="footer-list">
