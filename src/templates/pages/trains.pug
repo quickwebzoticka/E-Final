@@ -9,7 +9,7 @@ block content
 			h1.trains__title Выберите поезд
 			.trains-items
 				- for (var i=0; i<5; i++)
-					.trains-items-card
+					a.trains-items-card(href="#")
 						.trains-items-card-row
 							.trains-items-card-direction
 								img(src="assets/images/trains-direction-arr.svg", alt="")
@@ -22,6 +22,20 @@ block content
 								.trains-items-card-train__type Вид:
 									span Купе
 						.trains-items-card-row
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время отправления
+								.trains-items-card-row-col__text
+									span 13:56
+									span 24.09.19
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время прибытия
+								.trains-items-card-row-col__text
+									span 14:16
+									span 25.09.19
+							.trains-items-card-row-col
+								.trains-items-card-row-col__title Время в пути
+								.trains-items-card-row-col__text
+									span 24 ч. 16 м.
 						.trains-items-card-row
-							a.trains-items-card__submit(href="#") Выбрать поезд
+							.trains-items-card__submit Выбрать поезд
 					
