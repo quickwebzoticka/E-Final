@@ -7,6 +7,8 @@ $(document).ready(function () {
 		$(document).find('.breadcrumbs').hide();
 		$(document).find('.header.auth').hide();
 	}
+
+	$(document).find('.popup-form select').SumoSelect();
 });
 
 $(document).on('click', '.auth__title span', function () {

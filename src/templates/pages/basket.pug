@@ -1,0 +1,118 @@
+extends ../template
+
+block variables
+	- var title = 'Корзина'
+
+block content
+	.container
+		.basket
+			h1.title Корзина
+				span Поезд №479е
+					span 13:56 
+			.basket-content
+				.basket-content-row.row-title
+					.basket-content-row-col Бургер family
+					.basket-content-row-col Вес
+					.basket-content-row-col Цена
+					.basket-content-row-col Состав
+					.basket-content-row-col Удалить
+				.basket-content-row
+					.basket-content-row-col 
+						.basket-content-row-col__icon
+							img(src="assets/images/basket-item1.jpg", alt="")
+						.basket-content-row-col-info
+							.basket-content-row-col-info__title Количество персон
+							.basket-content-row-col-info-number
+								.basket-content-row-col-info-number__minus
+								.basket-content-row-col-info-number__val 2
+								.basket-content-row-col-info-number__plus
+					.basket-content-row-col —
+					.basket-content-row-col —
+					.basket-content-row-col —
+					.basket-content-row-col
+				.basket-content-row
+					.basket-content-row-col 
+						.basket-content-row-col__icon
+							img(src="assets/images/basket-item2.jpg", alt="")
+						.basket-content-row-col-info
+							.basket-content-row-col-info__title Фирменный Бургер
+							.basket-content-row-col-info-number
+								.basket-content-row-col-info-number__minus
+								.basket-content-row-col-info-number__val 1
+								.basket-content-row-col-info-number__plus
+					.basket-content-row-col 465 г
+					.basket-content-row-col 500 ₽
+					.basket-content-row-col Котлета, дор блю, томат, салат, соус блю чиз с белым шоколадом. Подается с порцией картофельных чипсов и соусом ранч
+					.basket-content-row-col 
+						.basket-content-row-col__del
+							img(src="assets/images/basket-del.svg", alt="")
+				.basket-content-row
+					.basket-content-row-col
+						.basket-content-row-col__icon
+							img(src="assets/images/basket-item3.jpg", alt="")
+						.basket-content-row-col-info
+							.basket-content-row-col-info__title Блю чиз Бургер
+							.basket-content-row-col-info-number
+								.basket-content-row-col-info-number__minus
+								.basket-content-row-col-info-number__val 1
+								.basket-content-row-col-info-number__plus
+					.basket-content-row-col 930 г
+					.basket-content-row-col 500 ₽
+					.basket-content-row-col Котлета, дор блю, томат, салат, соус блю чиз с белым шоколадом. Подается с порцией картофельных чипсов и соусом ранч
+					.basket-content-row-col
+						.basket-content-row-col__del
+							img(src="assets/images/basket-del.svg", alt="")
+				.basket-content-bot
+					.basket-content-bot-col Доставка:
+						span Бесплатно
+					.basket-content-bot-col Скидка:
+						span -100 ₽
+					.basket-content-bot-col
+						span Итого:
+							span 1500 ₽
+					.basket-content-bot-col
+						a.basket-content-bot-col__btn(data-fancybox="" data-options='{"src": "#CheckOut", "touch": false}' href="javascript:;") Оформить заказ
+	
+	form.popup-form#CheckOut(style="display: none")
+		.popup-form__title Оформление заказа
+		.popup-form-content
+			.popup-form-content-info
+				.trains-items-card-row(style="margin-bottom:15px")
+					.trains-items-card-direction
+						img(src="assets/images/trains-direction-arr.svg", alt="")
+						.trains-items-card-direction-items
+							span Санкт-Петербург
+							span Казань
+					.trains-items-card-train
+						.trains-items-card-train__num 479е
+							img(src="assets/images/trains-icon.svg", alt="")
+						.trains-items-card-train__type Вид:
+							span Купе
+				.trains-items-card-row
+					.trains-items-card-row-col
+						.trains-items-card-row-col__title Время отправления
+						.trains-items-card-row-col__text
+							span(style="margin-right:30px") 13:56
+							span 24.09.19
+					.trains-items-card-row-col
+						.trains-items-card-row-col__title Время прибытия
+						.trains-items-card-row-col__text
+							span(style="margin-right:30px") 14:16
+							span 25.09.19
+			label(for="phone") Номер телефона
+			input(type="text" name="phone" id="phone" placeholder="8 (999) 786-25-05" data-required)  
+			label(for="email") E-mail
+			input(type="text" name="email" id="email" placeholder="ivanov@rzd.ru" data-required) 
+			.popup-form-content-row Доставка:
+				span Бесплатно
+			.popup-form-content-row Скидка:
+				span -100 ₽
+			.popup-form-content-row.last-row Итого:
+				span 1500 ₽
+			select(name="")
+				option Оплата картой
+				option Apple Pay
+				option Google Pay
+			input.popup-form-content__promo(type="text" name="promo" id="promo" placeholder="Промокод")
+			a.popup-form-content__btn(href="#") Оплатить
+
