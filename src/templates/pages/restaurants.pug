@@ -41,3 +41,24 @@ block content
 							.sort-block__item.active Популярности
 							.sort-block__item Отзывам
 							.sort-block__item Цене
+			.restaurants-items
+				- for (var i=5; i>0; i--)
+					a.restaurants-items-card(href="restaurantpage.html")
+						.restaurants-items-card__img
+							img(src="assets/images/restaraunt-image" + i + ".jpg", alt="")
+						.restaurants-items-card-info
+							.restaurants-items-card-info__title Бургер family
+							.restaurants-items-card-info-row
+								.restaurants-items-card-info-row-rating
+									svg(xmlns="http://www.w3.org/2000/svg" width="96" height="13" viewBox="0 0 96 13" fill="none" data-rate="" + i + "")
+										path(d="M7.54713 0L9.37888 4.2388L14.4397 4.49139L10.511 7.3637L11.807 11.7586L7.54713 9.295L3.28726 11.7586L4.58331 7.3637L0.654514 4.49139L5.71539 4.2388L7.54713 0Z" fill="#C4C4C4")
+										path(d="M27.6165 0L29.4482 4.2388L34.5091 4.49139L30.5803 7.3637L31.8763 11.7586L27.6165 9.295L23.3566 11.7586L24.6526 7.3637L20.7239 4.49139L25.7847 4.2388L27.6165 0Z" fill="#C4C4C4")
+										path(d="M47.6858 0L49.5175 4.2388L54.5784 4.49139L50.6496 7.3637L51.9457 11.7586L47.6858 9.295L43.4259 11.7586L44.722 7.3637L40.7932 4.49139L45.8541 4.2388L47.6858 0Z" fill="#C4C4C4")
+										path(d="M67.7551 0L69.5869 4.2388L74.6478 4.49139L70.719 7.3637L72.015 11.7586L67.7551 9.295L63.4953 11.7586L64.7913 7.3637L60.8625 4.49139L65.9234 4.2388L67.7551 0Z" fill="#C4C4C4")
+										path(d="M87.825 0L89.6567 4.2388L94.7176 4.49139L90.7888 7.3637L92.0848 11.7586L87.825 9.295L83.5651 11.7586L84.8611 7.3637L80.9323 4.49139L85.9932 4.2388L87.825 0Z" fill="#C4C4C4")
+									.restaurants-items-card-info-row-rating__grade= i
+									.restaurants-items-card-info-row-rating__val (Отзывов 720)
+								.restaurants-items-card-info-row-price Заказ от 500 ₽
+							.restaurants-items-card-info__btn Выбрать ресторан
+
+
