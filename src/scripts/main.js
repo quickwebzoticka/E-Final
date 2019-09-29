@@ -8,7 +8,15 @@ $(document).ready(function () {
 		$(document).find('.header.auth').hide();
 	}
 
-	$(document).find('.popup-form select').SumoSelect();
+	if (document.title.toLowerCase() === 'заказы' || document.title.toLowerCase() === 'мои рестораны') {
+		$(document).find('.footer-another').css('transform', 'translateY(0%)');
+	}
+	if (document.title.toLowerCase() === 'заказы') {
+		$(document).find('.footer-another').find('.footer-another__item').eq(0).addClass('active') ;
+	}
+	if (document.title.toLowerCase() === 'мои рестораны') {
+		$(document).find('.footer-another').find('.footer-another__item').eq(1).addClass('active') ;
+	} 
 });
 
 $(document).on('click', '.auth__title span', function () {

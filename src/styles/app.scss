@@ -78,10 +78,6 @@ h1{
 		}
 	}
 }
-.basket .title{
-	border-bottom: none;
-	padding-bottom: 0;
-}
 .sort{
 	display: flex;
 	color: rgba(0, 0, 0, 0.7);
@@ -148,6 +144,7 @@ h1{
 @import 'common/fonts';
 @import 'common/header';
 @import 'common/footer';
+@import 'common/footer-another';
 @import 'common/popup';
 @import 'pages/main'; 
 @import 'pages/index';
@@ -156,4 +153,5 @@ h1{
 @import 'pages/restaurants';
 @import 'pages/restaurantpage';
 @import 'pages/dish';
-@import 'pages/basket';
+@import 'pages/orders';
+@import 'pages/my-restorants';

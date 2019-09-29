@@ -1,0 +1,173 @@
+extends ../template
+
+block variables
+	- var title = 'Заказы'
+
+block content
+	.container.pb150
+		.personal-orders
+			h1.mb20 Ваши заказы
+			.line.mb30
+			.personal-orders-content
+				.personal-orders-column.personal-orders-column--red
+					.personal-orders-column__head
+						.personal-orders-column__head--text Новые заказы
+						.personal-orders-column__head--count 3
+					.personal-orders-card
+						.personal-orders-card-head
+							.personal-orders-card-head__row
+								.personal-orders-card-head__name Петров А.А
+								.personal-orders-card-head__order.text-grey Заказ №274
+							.personal-orders-card-head__row
+								.personal-orders-card-head__text.text-grey Вагон №7
+								.personal-orders-card-head__text.text-grey Казанский вокзал
+								.personal-orders-card-head__text.text-grey Поезд №364
+						.personal-orders-card-main
+							.personal-orders-card-main__row
+								.personal-orders-card-main__title.text-grey Время доставки:
+								.personal-orders-card-main__value 13:56
+							.personal-orders-card-main__row
+								.personal-orders-card-main__title.text-grey Сумма:
+								.personal-orders-card-main__value 1500 ₽
+						.personal-orders-card-bottom
+							.btn(data-src="#order-popup" data-fancybox data-options='{"touch": false}') Подробнее о заказе
+							.btn.btn-red Начал готовится
+
+				.personal-orders-column.personal-orders-column--yellow
+						.personal-orders-column__head
+							.personal-orders-column__head--text Готовится
+							.personal-orders-column__head--count 3
+						.personal-orders-card
+							.personal-orders-card-head
+								.personal-orders-card-head__row
+									.personal-orders-card-head__name Петров А.А
+									.personal-orders-card-head__order.text-grey Заказ №274
+								.personal-orders-card-head__row
+									.personal-orders-card-head__text.text-grey Вагон №7
+									.personal-orders-card-head__text.text-grey Казанский вокзал
+									.personal-orders-card-head__text.text-grey Поезд №364
+							.personal-orders-card-main
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Время доставки:
+									.personal-orders-card-main__value 13:56
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Сумма:
+									.personal-orders-card-main__value 1500 ₽
+							.personal-orders-card-bottom
+								.btn(data-src="#order-popup" data-fancybox data-options='{"touch": false}') Подробнее о заказе
+								.btn.btn-red Начал готовится
+
+						.personal-orders-card
+							.personal-orders-card-head
+								.personal-orders-card-head__row
+									.personal-orders-card-head__name Петров А.А
+									.personal-orders-card-head__order.text-grey Заказ №274
+								.personal-orders-card-head__row
+									.personal-orders-card-head__text.text-grey Вагон №7
+									.personal-orders-card-head__text.text-grey Казанский вокзал
+									.personal-orders-card-head__text.text-grey Поезд №364
+							.personal-orders-card-main
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Время доставки:
+									.personal-orders-card-main__value 13:56
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Сумма:
+									.personal-orders-card-main__value 1500 ₽
+							.personal-orders-card-bottom
+								.btn(data-src="#order-popup" data-fancybox data-options='{"touch": false}') Подробнее о заказе
+								.btn.btn-red Начал готовится
+
+				.personal-orders-column.personal-orders-column--green
+						.personal-orders-column__head
+							.personal-orders-column__head--text Готовится
+							.personal-orders-column__head--count 3
+						.personal-orders-card
+							.personal-orders-card-head
+								.personal-orders-card-head__row
+									.personal-orders-card-head__name Петров А.А
+									.personal-orders-card-head__order.text-grey Заказ №274
+								.personal-orders-card-head__row
+									.personal-orders-card-head__text.text-grey Вагон №7
+									.personal-orders-card-head__text.text-grey Казанский вокзал
+									.personal-orders-card-head__text.text-grey Поезд №364
+							.personal-orders-card-main
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Время доставки:
+									.personal-orders-card-main__value 13:56
+								.personal-orders-card-main__row
+									.personal-orders-card-main__title.text-grey Сумма:
+									.personal-orders-card-main__value 1500 ₽
+							.personal-orders-card-bottom
+								.btn(data-src="#order-popup" data-fancybox data-options='{"touch": false}') Подробнее о заказе
+								.btn.btn-red Начал готовится
+
+	.personal-orders-popup-wrapper#order-popup(style="display: none")
+		.order-popup
+			.personal-orders-popup__head
+				.personal-orders-popup__order Заказ № 321245
+				.personal-orders-popup__cross(data-fancybox-close)
+			.personal-orders-popup-main
+				.personal-orders-popup-main-column
+					.personal-orders-popup-main-column__head Данные клиента:
+					.personal-orders-popup-main-column-content
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey ФИО:
+							.personal-orders-popup-main-column__value Ипостафилий Аристарх Дариданович
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey Время доставки:
+							.personal-orders-popup-main-column__value 13:56
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey Сумма:
+							.personal-orders-popup-main-column__value 1500 ₽
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey Поезд:
+							.personal-orders-popup-main-column__value № 346е
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey Вокзал:
+							.personal-orders-popup-main-column__value Казанский
+						.personal-orders-popup-main-column__row
+							.personal-orders-popup-main-column__title.text-grey Вагон:
+							.personal-orders-popup-main-column__value №7
+				.personal-orders-popup-main-column
+					.personal-orders-popup-main-column__head Состав заказа:
+					.personal-orders-popup-main-column-content
+						.personal-orders-popup-main-column__row-grid
+							.personal-orders-popup-main-column__img(style="background-image: url('assets/images/burger.png')")
+							.personal-orders-popup-main-column__count
+								.personal-orders-popup-main-column__count--head Бургер жирный
+								.personal-orders-popup-main-column__count--calc
+									.btn-calc -
+									.personal-orders-popup-main-column__count--label 2
+									.btn-calc +
+							.personal-orders-popup-main-column__mass.text-grey.text-center
+								| 930 г
+							.personal-orders-popup-main-column__parts.text-grey
+								| Котлета, дор блю, томат, салат, соус блю чиз с белым шоколадом. Подается с порцией картофельных чипсов и соусом ранч
+						.personal-orders-popup-main-column__row-grid
+							.personal-orders-popup-main-column__img(style="background-image: url('assets/images/burger.png')")
+							.personal-orders-popup-main-column__count
+								.personal-orders-popup-main-column__count--head Бургер жирный
+								.personal-orders-popup-main-column__count--calc
+									.btn-calc -
+									.personal-orders-popup-main-column__count--label 2
+									.btn-calc +
+							.personal-orders-popup-main-column__mass.text-grey.text-center
+								| 930 г
+							.personal-orders-popup-main-column__parts.text-grey
+								| Котлета, дор блю, томат, салат, соус блю чиз с белым шоколадом. Подается с порцией картофельных чипсов и соусом ранч
+						.personal-orders-popup-main-column__row-grid
+							.personal-orders-popup-main-column__img(style="background-image: url('assets/images/burger.png')")
+							.personal-orders-popup-main-column__count
+								.personal-orders-popup-main-column__count--head Бургер жирный
+								.personal-orders-popup-main-column__count--calc
+									.btn-calc -
+									.personal-orders-popup-main-column__count--label 2
+									.btn-calc +
+							.personal-orders-popup-main-column__mass.text-grey.text-center
+								| 930 г
+							.personal-orders-popup-main-column__parts.text-grey
+								| Котлета, дор блю, томат, салат, соус блю чиз с белым шоколадом. Подается с порцией картофельных чипсов и соусом ранч
+						.line
+			.personal-orders-popup-bottom
+				.personal-orders-popup__btn.personal-orders-popup__btn--width.btn Отменить
+				.personal-orders-popup__btn.btn.btn-red Начал готовиться

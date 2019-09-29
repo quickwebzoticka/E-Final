@@ -1,0 +1,235 @@
+extends ../template
+
+block variables
+	- var title = 'Мои рестораны'
+
+block content
+	.container.pb150
+		.my-restorants
+			.my-restorants-main-info
+				.my-restorants-main-info__img(style="background-image: url('assets/images/burger.png')")
+				.my-restorants-main-info__name
+					h1.my-restorants-main-info__name--title Бургер family
+					.my-restorants-main-info__name--response
+						.my-restorants-stars
+							.my-restorants-stars__item
+								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9372 0L17.4598 8.15153L27.1922 8.63729L19.6368 14.161L22.1292 22.6127L13.9372 17.875L5.74511 22.6127L8.2375 14.161L0.682134 8.63729L10.4146 8.15153L13.9372 0Z" fill="#F2C94C"/>
+								</svg>
+							.my-restorants-stars__item
+								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9372 0L17.4598 8.15153L27.1922 8.63729L19.6368 14.161L22.1292 22.6127L13.9372 17.875L5.74511 22.6127L8.2375 14.161L0.682134 8.63729L10.4146 8.15153L13.9372 0Z" fill="#F2C94C"/>
+								</svg>
+							.my-restorants-stars__item
+								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9372 0L17.4598 8.15153L27.1922 8.63729L19.6368 14.161L22.1292 22.6127L13.9372 17.875L5.74511 22.6127L8.2375 14.161L0.682134 8.63729L10.4146 8.15153L13.9372 0Z" fill="#F2C94C"/>
+								</svg>
+							.my-restorants-stars__item
+								<svg width="28" height="23" viewBox="0 0 28 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.9372 0L17.4598 8.15153L27.1922 8.63729L19.6368 14.161L22.1292 22.6127L13.9372 17.875L5.74511 22.6127L8.2375 14.161L0.682134 8.63729L10.4146 8.15153L13.9372 0Z" fill="#F2C94C"/>
+								</svg>
+							.my-restorants-stars__item
+								<svg width="27" height="23" viewBox="0 0 27 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M13.4352 0L16.9578 8.15153L26.6902 8.63729L19.1349 14.161L21.6273 22.6127L13.4352 17.875L5.24315 22.6127L7.73555 14.161L0.180181 8.63729L9.91263 8.15153L13.4352 0Z" fill="#C4C4C4"/>
+								</svg>
+						.my-restorants-response--bal 4.6
+						.my-restorants-response--count.text-grey (Отзывов 720)
+				.my-restorants-main-info__statistic
+					.my-restorants-main-info__statistic--item
+						.my-restorants-main-info__statistic--value 342
+						.my-restorants-main-info__statistic--title Позиции в меню
+					
+					.my-restorants-main-info__statistic--item
+						.my-restorants-main-info__statistic--value 7
+						.my-restorants-main-info__statistic--title Заказов за день
+					
+					.my-restorants-main-info__statistic--item
+						.my-restorants-main-info__statistic--value 723 ₽
+						.my-restorants-main-info__statistic--title Средний чек
+			.my-restorants-navigation
+				h2.my-restorants-navigation__head Меню ресторана
+				.my-restorants-navigation-tabs
+					.my-restorants-navigation-tabs__item.active
+						.my-restorants-navigation-tabs__item--img
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.9972 19.5914C31.0413 20.3842 30.5568 21.1331 29.7639 21.3974L1 31L10.6027 2.23613C10.867 1.44325 11.6158 0.95872 12.4086 1.00277C22.3637 1.6635 30.3365 9.63632 30.9972 19.5914Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10.1621 4.04211C19.985 4.04211 27.9578 12.0149 27.9578 21.8378" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M13.9943 15.0543C15.5269 15.0543 16.7694 13.8119 16.7694 12.2792C16.7694 10.7466 15.5269 9.50415 13.9943 9.50415C12.4617 9.50415 11.2192 10.7466 11.2192 12.2792C11.2192 13.8119 12.4617 15.0543 13.9943 15.0543Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21.3063 20.8247C22.8389 20.8247 24.0814 19.5822 24.0814 18.0496C24.0814 16.517 22.8389 15.2745 21.3063 15.2745C19.7737 15.2745 18.5312 16.517 18.5312 18.0496C18.5312 19.5822 19.7737 20.8247 21.3063 20.8247Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10.5143 24.6129C12.047 24.6129 13.2894 23.3704 13.2894 21.8378C13.2894 20.3052 12.047 19.0627 10.5143 19.0627C8.9817 19.0627 7.73926 20.3052 7.73926 21.8378C7.73926 23.3704 8.9817 24.6129 10.5143 24.6129Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Пицца
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.4219 6.46875L14.3594 1.82032L17.8359 1" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14.4375 31H3.10936L1 10.1797H16.5469L14.4375 31Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.1016 6.66406H2.44529C1.62498 6.66406 1 7.32812 1 8.10937V10.1797H16.5469V8.10937C16.5469 7.28906 15.9219 6.66406 15.1016 6.66406Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.24219 13.9297L5.33593 23.9687" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Напитки
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71572 24.2843 1 16 1C7.71574 1 1 7.71572 1 16C1 24.2843 7.71574 31 16 31Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.22119 10.1151C6.61942 9.27434 7.19465 8.52213 7.85836 7.85841C8.61058 7.1062 9.4513 6.53098 10.3363 6.0885" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M29.1858 8.8761C29.1858 8.8761 29.2743 12.2389 26.3539 11.4425C23.4336 10.646 23.5663 12.7257 22.4601 13.5221C21.6194 14.0973 20.8672 14.2743 20.292 14.1858" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.3983 15.6018C9.49565 16.8849 7.54874 13.6549 6.00007 15.469C4.62839 17.0619 3.74343 18.3894 1.13281 16.9292" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16.0002 20.6017C18.5417 20.6017 20.602 18.5414 20.602 16C20.602 13.4585 18.5417 11.3982 16.0002 11.3982C13.4587 11.3982 11.3984 13.4585 11.3984 16C11.3984 18.5414 13.4587 20.6017 16.0002 20.6017Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M27.8144 15.8672L24.54 16.7964" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21.6638 26.354L18.9204 24.3186" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.3979 23.1681L8.12354 24.0973" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M25.2923 20.6903L23.9648 22.3717" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.43368 19.5398L6.13281 19.0088" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.2035 24.8053L13.7876 26.5752" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Сладости
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.9759 9.70331C18.1153 7.56392 13.9337 5.95938 15.9759 3.91724" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M19.914 9.70341C23.1231 6.49434 16.8508 4.06321 19.914 1" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M26.3323 28.5688H13.5446C6.59157 28.5688 1 21.2755 1 14.3711H38.8768C38.9254 21.2755 33.2853 28.5688 26.3323 28.5688Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5.52148 18.0664C6.39669 20.8379 8.43885 23.3663 11.0158 24.436" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M26.5265 28.5203V31H13.3984V28.5203" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Супы
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="19" height="32" viewBox="0 0 19 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13.4219 6.46875L14.3594 1.82032L17.8359 1" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14.4375 31H3.10936L1 10.1797H16.5469L14.4375 31Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.1016 6.66406H2.44529C1.62498 6.66406 1 7.32812 1 8.10937V10.1797H16.5469V8.10937C16.5469 7.28906 15.9219 6.66406 15.1016 6.66406Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.24219 13.9297L5.33593 23.9687" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Напитки
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M16 31C24.2843 31 31 24.2843 31 16C31 7.71572 24.2843 1 16 1C7.71574 1 1 7.71572 1 16C1 24.2843 7.71574 31 16 31Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M6.22119 10.1151C6.61942 9.27434 7.19465 8.52213 7.85836 7.85841C8.61058 7.1062 9.4513 6.53098 10.3363 6.0885" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M29.1858 8.8761C29.1858 8.8761 29.2743 12.2389 26.3539 11.4425C23.4336 10.646 23.5663 12.7257 22.4601 13.5221C21.6194 14.0973 20.8672 14.2743 20.292 14.1858" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.3983 15.6018C9.49565 16.8849 7.54874 13.6549 6.00007 15.469C4.62839 17.0619 3.74343 18.3894 1.13281 16.9292" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M16.0002 20.6017C18.5417 20.6017 20.602 18.5414 20.602 16C20.602 13.4585 18.5417 11.3982 16.0002 11.3982C13.4587 11.3982 11.3984 13.4585 11.3984 16C11.3984 18.5414 13.4587 20.6017 16.0002 20.6017Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M27.8144 15.8672L24.54 16.7964" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M21.6638 26.354L18.9204 24.3186" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.3979 23.1681L8.12354 24.0973" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M25.2923 20.6903L23.9648 22.3717" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M8.43368 19.5398L6.13281 19.0088" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.2035 24.8053L13.7876 26.5752" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Сладости
+					.my-restorants-navigation-tabs__item
+						.my-restorants-navigation-tabs__item--img
+							<svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15.9759 9.70331C18.1153 7.56392 13.9337 5.95938 15.9759 3.91724" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M19.914 9.70341C23.1231 6.49434 16.8508 4.06321 19.914 1" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M26.3323 28.5688H13.5446C6.59157 28.5688 1 21.2755 1 14.3711H38.8768C38.9254 21.2755 33.2853 28.5688 26.3323 28.5688Z" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M5.52148 18.0664C6.39669 20.8379 8.43885 23.3663 11.0158 24.436" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M26.5265 28.5203V31H13.3984V28.5203" stroke="#828282" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+
+						.my-restorants-navigation-tabs__item--text Супы
+					.my-restorants-navigation-tabs__item.my-restorants-add-btn
+						.my-restorants-add-btn__img
+							<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M13 1V13M13 25V13M13 13H25M13 13H1" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round"/>
+							</svg>
+						.my-restorants-add-btn__text Добавить
+			.my-restorants-content
+				.my-restorants-content__item.my-restorants-add-btn
+					.my-restorants-add-btn__img
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 1V13M13 25V13M13 13H25M13 13H1" stroke="#BDBDBD" stroke-width="1.5" stroke-linecap="round"/>
+						</svg>
+					.my-restorants-add-btn__text Добавить
+				.my-restorants-content__item
+					.my-restorants-content__item--img(style="background-image: url('assets/images/burger-big.png')")
+					.my-restorants-content__item--text
+						.my-restorants-content__item--row
+							.my-restorants-content__item--name Чизбургер с беконом
+							.my-restorants-content__item--mass.text-grey 350 г
+							.my-restorants-content__item--price 610 ₽
+						.my-restorants-content__item--row.my-restorants-content__item--row-alignend
+							.my-restorants-content__item--parts.text-grey
+								| Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+							.my-restorants-content__item--icon
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="29" height="29" rx="4.5" stroke="#E21A1A"/>
+									<path d="M21.7403 21.936H7.54482C7.24638 21.936 7.01282 22.1825 7.01282 22.468C7.01282 22.7534 7.25936 23 7.54482 23H21.7533C22.0517 23 22.2853 22.7534 22.2853 22.468C22.2853 22.1825 22.0388 21.936 21.7403 21.936V21.936Z" fill="#E21A1A"/>
+									<path d="M7.01298 17.2258L7 19.7561C7 19.8988 7.0519 20.0415 7.15571 20.1453C7.25952 20.2491 7.38927 20.301 7.53201 20.301L10.0493 20.2881C10.192 20.2881 10.3218 20.2362 10.4256 20.1324L19.1194 11.4386C19.327 11.231 19.327 10.8936 19.1194 10.673L16.628 8.15571C16.4204 7.9481 16.083 7.9481 15.8625 8.15571L14.1237 9.90744L7.16869 16.8495C7.07785 16.9533 7.01298 17.083 7.01298 17.2258V17.2258ZM16.2517 9.29758L18.0035 11.0493L17.0173 12.0355L15.2656 10.2837L16.2517 9.29758ZM8.08997 17.4593L14.5 11.0493L16.2517 12.801L9.8417 19.1981L8.07699 19.2111L8.08997 17.4593V17.4593Z" fill="#E21A1A"/>
+								</svg>
+				.my-restorants-content__item
+					.my-restorants-content__item--img(style="background-image: url('assets/images/burger-big.png')")
+					.my-restorants-content__item--text
+						.my-restorants-content__item--row
+							.my-restorants-content__item--name Чизбургер с беконом
+							.my-restorants-content__item--mass.text-grey 350 г
+							.my-restorants-content__item--price 610 ₽
+						.my-restorants-content__item--row.my-restorants-content__item--row-alignend
+							.my-restorants-content__item--parts.text-grey
+								| Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+							.my-restorants-content__item--icon
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="29" height="29" rx="4.5" stroke="#E21A1A"/>
+									<path d="M21.7403 21.936H7.54482C7.24638 21.936 7.01282 22.1825 7.01282 22.468C7.01282 22.7534 7.25936 23 7.54482 23H21.7533C22.0517 23 22.2853 22.7534 22.2853 22.468C22.2853 22.1825 22.0388 21.936 21.7403 21.936V21.936Z" fill="#E21A1A"/>
+									<path d="M7.01298 17.2258L7 19.7561C7 19.8988 7.0519 20.0415 7.15571 20.1453C7.25952 20.2491 7.38927 20.301 7.53201 20.301L10.0493 20.2881C10.192 20.2881 10.3218 20.2362 10.4256 20.1324L19.1194 11.4386C19.327 11.231 19.327 10.8936 19.1194 10.673L16.628 8.15571C16.4204 7.9481 16.083 7.9481 15.8625 8.15571L14.1237 9.90744L7.16869 16.8495C7.07785 16.9533 7.01298 17.083 7.01298 17.2258V17.2258ZM16.2517 9.29758L18.0035 11.0493L17.0173 12.0355L15.2656 10.2837L16.2517 9.29758ZM8.08997 17.4593L14.5 11.0493L16.2517 12.801L9.8417 19.1981L8.07699 19.2111L8.08997 17.4593V17.4593Z" fill="#E21A1A"/>
+								</svg>
+				.my-restorants-content__item
+					.my-restorants-content__item--img(style="background-image: url('assets/images/burger-big.png')")
+					.my-restorants-content__item--text
+						.my-restorants-content__item--row
+							.my-restorants-content__item--name Чизбургер с беконом
+							.my-restorants-content__item--mass.text-grey 350 г
+							.my-restorants-content__item--price 610 ₽
+						.my-restorants-content__item--row.my-restorants-content__item--row-alignend
+							.my-restorants-content__item--parts.text-grey
+								| Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+							.my-restorants-content__item--icon
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="29" height="29" rx="4.5" stroke="#E21A1A"/>
+									<path d="M21.7403 21.936H7.54482C7.24638 21.936 7.01282 22.1825 7.01282 22.468C7.01282 22.7534 7.25936 23 7.54482 23H21.7533C22.0517 23 22.2853 22.7534 22.2853 22.468C22.2853 22.1825 22.0388 21.936 21.7403 21.936V21.936Z" fill="#E21A1A"/>
+									<path d="M7.01298 17.2258L7 19.7561C7 19.8988 7.0519 20.0415 7.15571 20.1453C7.25952 20.2491 7.38927 20.301 7.53201 20.301L10.0493 20.2881C10.192 20.2881 10.3218 20.2362 10.4256 20.1324L19.1194 11.4386C19.327 11.231 19.327 10.8936 19.1194 10.673L16.628 8.15571C16.4204 7.9481 16.083 7.9481 15.8625 8.15571L14.1237 9.90744L7.16869 16.8495C7.07785 16.9533 7.01298 17.083 7.01298 17.2258V17.2258ZM16.2517 9.29758L18.0035 11.0493L17.0173 12.0355L15.2656 10.2837L16.2517 9.29758ZM8.08997 17.4593L14.5 11.0493L16.2517 12.801L9.8417 19.1981L8.07699 19.2111L8.08997 17.4593V17.4593Z" fill="#E21A1A"/>
+								</svg>
+				.my-restorants-content__item
+					.my-restorants-content__item--img(style="background-image: url('assets/images/burger-big.png')")
+					.my-restorants-content__item--text
+						.my-restorants-content__item--row
+							.my-restorants-content__item--name Чизбургер с беконом
+							.my-restorants-content__item--mass.text-grey 350 г
+							.my-restorants-content__item--price 610 ₽
+						.my-restorants-content__item--row.my-restorants-content__item--row-alignend
+							.my-restorants-content__item--parts.text-grey
+								| Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+							.my-restorants-content__item--icon
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="29" height="29" rx="4.5" stroke="#E21A1A"/>
+									<path d="M21.7403 21.936H7.54482C7.24638 21.936 7.01282 22.1825 7.01282 22.468C7.01282 22.7534 7.25936 23 7.54482 23H21.7533C22.0517 23 22.2853 22.7534 22.2853 22.468C22.2853 22.1825 22.0388 21.936 21.7403 21.936V21.936Z" fill="#E21A1A"/>
+									<path d="M7.01298 17.2258L7 19.7561C7 19.8988 7.0519 20.0415 7.15571 20.1453C7.25952 20.2491 7.38927 20.301 7.53201 20.301L10.0493 20.2881C10.192 20.2881 10.3218 20.2362 10.4256 20.1324L19.1194 11.4386C19.327 11.231 19.327 10.8936 19.1194 10.673L16.628 8.15571C16.4204 7.9481 16.083 7.9481 15.8625 8.15571L14.1237 9.90744L7.16869 16.8495C7.07785 16.9533 7.01298 17.083 7.01298 17.2258V17.2258ZM16.2517 9.29758L18.0035 11.0493L17.0173 12.0355L15.2656 10.2837L16.2517 9.29758ZM8.08997 17.4593L14.5 11.0493L16.2517 12.801L9.8417 19.1981L8.07699 19.2111L8.08997 17.4593V17.4593Z" fill="#E21A1A"/>
+								</svg>
+				.my-restorants-content__item
+					.my-restorants-content__item--img(style="background-image: url('assets/images/burger-big.png')")
+					.my-restorants-content__item--text
+						.my-restorants-content__item--row
+							.my-restorants-content__item--name Чизбургер с беконом
+							.my-restorants-content__item--mass.text-grey 350 г
+							.my-restorants-content__item--price 610 ₽
+						.my-restorants-content__item--row.my-restorants-content__item--row-alignend
+							.my-restorants-content__item--parts.text-grey
+								| Булочка для бургера, сливочный соус, салат, шампиньоны, говяжья котлета, огурец соленый, бекон, халапеньо
+							.my-restorants-content__item--icon
+								<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.5" width="29" height="29" rx="4.5" stroke="#E21A1A"/>
+									<path d="M21.7403 21.936H7.54482C7.24638 21.936 7.01282 22.1825 7.01282 22.468C7.01282 22.7534 7.25936 23 7.54482 23H21.7533C22.0517 23 22.2853 22.7534 22.2853 22.468C22.2853 22.1825 22.0388 21.936 21.7403 21.936V21.936Z" fill="#E21A1A"/>
+									<path d="M7.01298 17.2258L7 19.7561C7 19.8988 7.0519 20.0415 7.15571 20.1453C7.25952 20.2491 7.38927 20.301 7.53201 20.301L10.0493 20.2881C10.192 20.2881 10.3218 20.2362 10.4256 20.1324L19.1194 11.4386C19.327 11.231 19.327 10.8936 19.1194 10.673L16.628 8.15571C16.4204 7.9481 16.083 7.9481 15.8625 8.15571L14.1237 9.90744L7.16869 16.8495C7.07785 16.9533 7.01298 17.083 7.01298 17.2258V17.2258ZM16.2517 9.29758L18.0035 11.0493L17.0173 12.0355L15.2656 10.2837L16.2517 9.29758ZM8.08997 17.4593L14.5 11.0493L16.2517 12.801L9.8417 19.1981L8.07699 19.2111L8.08997 17.4593V17.4593Z" fill="#E21A1A"/>
+								</svg>
+
+
+
+
